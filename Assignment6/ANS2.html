@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .container__hed{
+          font-size: 30px;
+          background-color: blanchedalmond;
+          display: inline;
+         
+        }                                                          
+       
+        .para{
+            font-size: 20px;
+            line-height: 1.5;
+            background-color:olive;
+            border: 2px solid black;
+            height: 100%;
+           margin: 5px;
+           padding: 5px;
+        }
+        .para--one{
+            color: rebeccapurple;
+        }
+        .para--two{
+            color: red;
+        }
+        .para--three{
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+<!-- here i have created a simple webpage with three paragraphs and named their classes with BEM naming convention
+like ive created a div with class name '.container' which represents block level styling then there is h3 with class name 
+".container__hed" which represents element levelstyling and after that there are p tags with class name 'para' and 'para--one' here 'para--one' 'para--two''para--three' are the modifier -->
+    <div class="container">
+       
+        <h3 class="container__hed">para one</h3>
+        <br>
+            <p class="para para--one ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at labore facere quo! Voluptates aliquam eveniet sunt iure? Ducimus deleniti accusamus voluptate ipsam, pariatur ut cum officia deserunt suscipit doloremque repudiandae numquam consectetur soluta libero dicta velit nihil tempora explicabo reprehenderit vitae optio praesentium laborum. Mollitia suscipit cumque tempora! Voluptates, voluptatibus. Id maxime omnis non eum modi saepe voluptatem alias.
+            </p>
+      
+        
+            <h3 class="container__hed">para two</h3>
+            <br>
+            <p class="para para--two">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In repudiandae quia error nihil possimus. Ab dignissimos officiis consectetur odit exercitationem tenetur doloremque soluta non eligendi provident dicta laborum eveniet suscipit cupiditate placeat,
+                <span class="container__sp">
+                    error maiores inventore rerum blanditiis quod autem fuga nulla fugit architecto? Distinctio ullam aut exercitationem minus quae autem tenetur consectetur assumenda voluptate provident reiciendis sit voluptatibus ex, totam aliquam vitae labore! Aut rem 
+                </span>
+                mollitia nam voluptatum numquam neque commodi tenetur! Minima hic unde necessitatibus iure magni beatae quas laudantium quis, error pariatur, magnam obcaecati officia. Molestiae ex repudiandae tempora corrupti voluptate, odit vero atque ratione laudantium, eos quia!
+    
+            </p>
+       
+       
+            <h3 class="container__hed">para three</h3>
+            <br>
+            <p class="para para--three">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, beatae voluptate possimus eveniet debitis omnis necessitatibus qui reprehenderit atque cum.
+            </p>
+      
+    </div>
+</body>
+</html>

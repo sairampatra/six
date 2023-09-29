@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary:rgb(0, 0, 0);
+            --secondary:maroon;
+            --tertiary:olive;
+            --color:white;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            padding: 10px;
+            width: 50%;
+            margin: auto;
+            border-radius: 5px;
+        }
+        #firstname{
+            background-color: var(--tertiary);
+            border-radius: 5px;
+            color: var(--color);
+        }
+        #lastname{
+            background-color: var(--secondary);
+            border-radius: 5px;
+            color: var(--color);
+        }
+        #email{
+            background-color: var(--primary);
+            border-radius: 5px;
+            color:var(--color) ;
+        }
+        #password{
+            opacity: 0.7;
+    border-radius: 5px;
+        }
+        #conformpassword{
+            opacity: 0.7;
+    border-radius: 5px;
+        }
+        .age{
+            background-color: #673ab7;
+    width: 31%;
+   
+    opacity: 0.5;
+}
+        
+    </style>
+</head>
+<body>
+    <form class="form" style="border: 2px solid black; " action="" method="post"> 
+        <h1>Sign up</h1>
+        <label for="firstname">firstname
+        <input type="text" id="firstname" name="firstname"  minlength="3" required>
+     </label>
+        <br>
+        <label for="lastname">lastname
+        <input type="text" id="lastname" name="lastname"   minlength="3" required>
+     </label>
+        <br>
+        <label for="email">email
+        <input type="email" id="email" name="email"   minlength="3" >
+     </label>
+        <br>
+        <label for="password">password
+        <input type="password" id="password" name="password" required >
+     </label>
+        <br>
+        <label for="conformpassword">conform-password</label>
+        <input type="password" id="conformpassword" name="conformpassword" required >
+        <br>
+        <label for="age">age</label>
+        <input type="number" id="age" name="age"  min="0" max="150" required >
+        <br>
+        <div class="age">
+
+            <label for="gender">gender</label>
+           <select  name="gender" id="gender"  required>
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+           <option value="others">Others</option>
+         </select>
+        </div>
+        <br>
+        <label for="agree">Terms and conditions:
+        <input type="checkbox" id="agree" name="agree" required>
+ i agree
+     </label>
+        <br>
+        <input type="submit" value="submit">
+        
+    </form>
+</body>
+</html>
